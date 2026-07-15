@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escolha o Modelo — Dra. [Nome]</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{--vinho:#651829;--vinho-esc:#3d0d18;--dourado:#b8893e;--dourado-cl:#dcb877;--marfim:#faf6ef}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Outfit',sans-serif;background:linear-gradient(150deg,var(--vinho-esc),var(--vinho));color:var(--marfim);min-height:100vh;padding:60px 20px}
+  h1,h2{font-family:'Fraunces',serif;font-weight:500}
+  .wrap{max-width:1100px;margin:0 auto}
+  .top{text-align:center;margin-bottom:56px}
+  .eyebrow{color:var(--dourado-cl);letter-spacing:4px;text-transform:uppercase;font-size:.78rem}
+  .top h1{font-size:3rem;margin:14px 0 10px}
+  .top p{color:#e2d3c6;max-width:560px;margin:0 auto;font-weight:300}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+  .card{background:rgba(255,255,255,.05);border:1px solid rgba(220,184,119,.3);border-radius:8px;overflow:hidden;transition:.35s;display:flex;flex-direction:column}
+  .card:hover{transform:translateY(-8px);border-color:var(--dourado);box-shadow:0 20px 50px rgba(0,0,0,.35)}
+  .prev{aspect-ratio:16/11;display:flex;flex-direction:column;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .p1{background:linear-gradient(0deg,rgba(61,13,24,.5),rgba(61,13,24,.04)),url('assets/img/em-pe-oab-lg.webp') center 14%/cover}
+  .p2{background:linear-gradient(0deg,rgba(23,17,20,.55),rgba(23,17,20,.04)),url('assets/img/perfil-blazer-lg.webp') center 16%/cover}
+  .p3{background:linear-gradient(0deg,rgba(61,13,24,.5),rgba(61,13,24,.04)),url('assets/img/sentada-oab-lg.webp') center 9%/cover}
+  .prev .mock,.prev .bar{display:none}
+  .prev .tag{position:absolute;top:14px;left:14px;background:var(--dourado);color:var(--vinho-esc);font-size:.7rem;font-weight:600;padding:5px 12px;border-radius:50px;letter-spacing:1px}
+  .prev .mock{font-family:'Fraunces';font-size:1.5rem;color:var(--dourado-cl);text-align:center;padding:0 20px}
+  .prev .bar{width:60%;height:8px;background:rgba(220,184,119,.35);border-radius:4px;margin-top:10px}
+  .prev .bar.s{width:40%;height:6px;opacity:.6}
+  .body{padding:26px;flex:1;display:flex;flex-direction:column}
+  .body h2{font-size:1.5rem;color:#fff}
+  .body .desc{color:#d8c8bc;font-size:.9rem;font-weight:300;margin:8px 0 18px;flex:1}
+  .body .feats{list-style:none;margin-bottom:22px}
+  .body .feats li{font-size:.82rem;color:#e2d3c6;padding:4px 0 4px 18px;position:relative}
+  .body .feats li::before{content:"◆";color:var(--dourado);position:absolute;left:0;font-size:.6rem;top:7px}
+  .btn{display:block;text-align:center;padding:14px;background:var(--dourado);color:var(--vinho-esc);text-decoration:none;font-weight:600;border-radius:4px;transition:.3s}
+  .btn:hover{background:var(--dourado-cl)}
+  .foot{text-align:center;margin-top:50px;color:#c9b3ba;font-size:.85rem;font-weight:300}
+  .foot code{background:rgba(255,255,255,.1);padding:2px 8px;border-radius:4px;color:var(--dourado-cl)}
+  @media(max-width:820px){.grid{grid-template-columns:1fr}.top h1{font-size:2.2rem}}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <span class="eyebrow">Landing Page • Advocacia</span>
+      <h1>Escolha o seu modelo</h1>
+      <p>Três layouts diferentes no esquema vinho e dourado. Clique para visualizar cada um em tela cheia e me diga qual você prefere.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="prev p1"><span class="tag">Modelo 1</span><div class="mock">Clássico Elegante</div><div class="bar"></div><div class="bar s"></div></div>
+        <div class="body">
+          <h2>Clássico Elegante</h2>
+          <p class="desc">Sóbrio e tradicional, com molduras douradas, tipografia serifada refinada e cards de áreas em fundo vinho.</p>
+          <ul class="feats"><li>Hero com foto emoldurada</li><li>Seção de números e FAQ</li><li>Transmite tradição e confiança</li></ul>
+          <a class="btn" href="modelo-1.html">Ver Modelo 1 →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="prev p2"><span class="tag">Modelo 2</span><div class="mock">Moderno Ousado</div><div class="bar"></div><div class="bar s"></div></div>
+        <div class="body">
+          <h2>Moderno Ousado</h2>
+          <p class="desc">Impactante e contemporâneo, com hero de foto em tela cheia, faixa animada e listas de áreas em fundo escuro.</p>
+          <ul class="feats"><li>Visual forte e dinâmico</li><li>Seção "como funciona" em etapas</li><li>Transmite energia e atitude</li></ul>
+          <a class="btn" href="modelo-2.html">Ver Modelo 2 →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="prev p3"><span class="tag">Modelo 3</span><div class="mock">Editorial Sofisticado</div><div class="bar"></div><div class="bar s"></div></div>
+        <div class="body">
+          <h2>Editorial Sofisticado</h2>
+          <p class="desc">Estilo revista de luxo, com tipografia grande, capitular dourada, citação em destaque e grid editorial.</p>
+          <ul class="feats"><li>Layout premium e clean</li><li>Frase-lema em destaque</li><li>Transmite exclusividade</li></ul>
+          <a class="btn" href="modelo-3.html">Ver Modelo 3 →</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot">
+      Placeholders a substituir: <code>[Nome]</code> · <code>OAB/UF 000.000</code> · <code>55DDDNUMERO</code> (WhatsApp) · fotos em <code>❖ FOTO</code>
+    </div>
+  </div>
+</body>
+</html>
